@@ -20,6 +20,7 @@ rankhospital <- function(state, outcome, num = "best") {
   mycols[c(2,7,11,17,23)] <- NA ## Specify columns to read
   
   ## Read the .csv file
+  setwd("~/datasciencecoursera/Assignment03")
   data <- read.csv("outcome-of-care-measures.csv",
                    colClasses = mycols,
                    stringsAsFactors = FALSE,
